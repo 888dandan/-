@@ -13,6 +13,11 @@
 		F33BA4E4205E9CE20051E02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33BA4E3205E9CE20051E02B /* Assets.xcassets */; };
 		F33BA4E7205E9CE20051E02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33BA4E5205E9CE20051E02B /* LaunchScreen.storyboard */; };
 		F33BA4EA205E9CE20051E02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F33BA4E9205E9CE20051E02B /* main.m */; };
+		F33BA4F7205E9DAC0051E02B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F33BA4F6205E9DAC0051E02B /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F33BA4FA205E9DD60051E02B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33BA4F9205E9DD60051E02B /* QuartzCore.framework */; };
+		F33BA4FC205E9E230051E02B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33BA4FB205E9E230051E02B /* UIKit.framework */; };
+		F33BA4FE205E9E650051E02B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33BA4FD205E9E650051E02B /* Foundation.framework */; };
+		F33BA500205EA1800051E02B /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F33BA4FF205EA1800051E02B /* File.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		F33BA4E6205E9CE20051E02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33BA4E8205E9CE20051E02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33BA4E9205E9CE20051E02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F33BA4F5205E9DAC0051E02B /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		F33BA4F6205E9DAC0051E02B /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		F33BA4F9205E9DD60051E02B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F33BA4FB205E9E230051E02B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F33BA4FD205E9E650051E02B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F33BA4FF205EA1800051E02B /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33BA4FE205E9E650051E02B /* Foundation.framework in Frameworks */,
+				F33BA4FC205E9E230051E02B /* UIKit.framework in Frameworks */,
+				F33BA4FA205E9DD60051E02B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,7 @@
 			children = (
 				F33BA4D9205E9CE20051E02B /* MbProgressHUD */,
 				F33BA4D8205E9CE20051E02B /* Products */,
+				F33BA4F8205E9DD50051E02B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +73,7 @@
 		F33BA4D9205E9CE20051E02B /* MbProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				F33BA4F4205E9DAC0051E02B /* Toast */,
 				F33BA4DA205E9CE20051E02B /* AppDelegate.h */,
 				F33BA4DB205E9CE20051E02B /* AppDelegate.m */,
 				F33BA4DD205E9CE20051E02B /* ViewController.h */,
@@ -67,8 +83,29 @@
 				F33BA4E5205E9CE20051E02B /* LaunchScreen.storyboard */,
 				F33BA4E8205E9CE20051E02B /* Info.plist */,
 				F33BA4E9205E9CE20051E02B /* main.m */,
+				F33BA4FF205EA1800051E02B /* File.rtf */,
 			);
 			path = MbProgressHUD;
+			sourceTree = "<group>";
+		};
+		F33BA4F4205E9DAC0051E02B /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F33BA4F5205E9DAC0051E02B /* Toast+UIView.h */,
+				F33BA4F6205E9DAC0051E02B /* Toast+UIView.m */,
+			);
+			name = Toast;
+			path = "../../点点/DianDian/Leshop/Leshop/utils/Toast";
+			sourceTree = "<group>";
+		};
+		F33BA4F8205E9DD50051E02B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F33BA4FD205E9E650051E02B /* Foundation.framework */,
+				F33BA4FB205E9E230051E02B /* UIKit.framework */,
+				F33BA4F9205E9DD60051E02B /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +168,7 @@
 			files = (
 				F33BA4E7205E9CE20051E02B /* LaunchScreen.storyboard in Resources */,
 				F33BA4E4205E9CE20051E02B /* Assets.xcassets in Resources */,
+				F33BA500205EA1800051E02B /* File.rtf in Resources */,
 				F33BA4E2205E9CE20051E02B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33BA4F7205E9DAC0051E02B /* Toast+UIView.m in Sources */,
 				F33BA4DF205E9CE20051E02B /* ViewController.m in Sources */,
 				F33BA4EA205E9CE20051E02B /* main.m in Sources */,
 				F33BA4DC205E9CE20051E02B /* AppDelegate.m in Sources */,
