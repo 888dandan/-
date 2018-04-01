@@ -41,10 +41,11 @@
         //
         else{
             [btn setTitle:@"自定义view" forState:UIControlStateNormal];
+            NSLog(@"我更新了");
 
         }
         
-
+     
     }
 }
 
